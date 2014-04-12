@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <div ng-controller="nattu">
+        From        <select ng-model="source">
+          <option value="">-- choose currency --</option>
+          <option value="IND">Indian Rupee</option>
+          <option value="USD">US Dollar</option>
+          <option value="CHY">Chinese Yuan</option>
+          <option value="EUR">Euro</option>
+          <option value="SGD">Singapore Dollar</option>
+        </select>
+To
+                <select ng-model="destin">
+          <option value="">-- choose currency --</option>
+          <option value="IND">Indian Rupee</option>
+          <option value="USD">US Dollar</option>
+          <option value="CHY">Chinese Yuan</option>
+          <option value="EUR">Euro</option>
+          <option value="SGD">Singapore Dollar</option>
+        </select>
+        <br />
+
+         converting         <span ng-bind="myname"></span>
+ to         <span ng-bind="myname1"></span>
+        <br />
+        <input type="text" ng-model="src" />
+-        <input type="text" ng-model="dest" />
+
+      </div>
+    </div>
+  </body>
+
+</html>
